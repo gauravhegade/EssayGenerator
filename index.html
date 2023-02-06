@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Essay Generator</title>
+    <script src="script.js"></script>
+    <style>
+      #prompt {
+        width: 50%;
+        height: 100px;
+        font-size: 20px;
+      }
+
+      #generated-essay {
+        width: 50%;
+        height: 500px;
+        font-size: 20px;
+      }
+
+      #word-count {
+        width: 50%;
+        height: 50px;
+        font-size: 20px;
+      }
+
+      #tone {
+        width: 50%;
+        height: 50px;
+        font-size: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <textarea id="prompt"></textarea><br />
+    <input type="number" id="word-count" placeholder="Word Count" /><br /><br />
+    <select id="tone">
+      <option value="positive">Positive</option>
+      <option value="neutral">Neutral</option>
+      <option value="negative">Negative</option></select
+    ><br /><br />
+    <button id="generate-button">Generate Essay</button><br /><br />
+    <textarea id="generated-essay" readonly></textarea>
+  </body>
+  <script src="essay-generator.js"></script>
+</html>

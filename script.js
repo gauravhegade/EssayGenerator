@@ -17,7 +17,7 @@ async function generateEssay(topic, wordCount, tone) {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
-            'Authorization': 'Bearer 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',
+            'Authorization': 'Bearer api_key_here',
         },
         body: JSON.stringify({
             "model": "text-davinci-003",
